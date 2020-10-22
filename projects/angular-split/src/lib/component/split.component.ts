@@ -72,6 +72,7 @@ import {
         *ngIf="last === false"
         #gutterEls
         class="as-split-gutter"
+        [attr.aria-label]="gutterAriaLabel"
         [style.flex-basis.px]="gutterSize"
         [style.order]="index * 2 + 1"
         (mousedown)="startDragging($event, index * 2 + 1, index + 1)"
@@ -213,6 +214,10 @@ export class SplitComponent implements AfterViewInit, OnDestroy {
   get gutterDblClickDuration(): number {
     return this._gutterDblClickDuration
   }
+
+  ////
+
+  @Input() gutterAriaLabel: string
 
   ////
 
