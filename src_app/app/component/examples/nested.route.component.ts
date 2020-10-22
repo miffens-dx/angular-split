@@ -12,9 +12,9 @@ import { AComponent } from './AComponent'
     <div class="container">
       <sp-example-title [type]="exampleEnum.NESTED"></sp-example-title>
       <div class="split-example" style="height: 400px;">
-        <as-split direction="horizontal" restrictMove="true" [useTransition]="true">
+        <as-split direction="horizontal" restrictMove="true" [useTransition]="true" gutterAriaLabel="adjustable divider between two main views">
           <as-split-area size="40">
-            <as-split direction="vertical" restrictMove="true">
+            <as-split direction="vertical" restrictMove="true" gutterAriaLabel="adjustable divider within the main left view">
               <as-split-area>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tiam, quis nostrud
@@ -44,7 +44,7 @@ import { AComponent } from './AComponent'
             </as-split>
           </as-split-area>
           <as-split-area size="60">
-            <as-split direction="vertical" restrictMove="true">
+            <as-split direction="vertical" restrictMove="true" gutterAriaLabel="adjustable divider within the right main view">
               <as-split-area size="25">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tiam, quis nostrud
