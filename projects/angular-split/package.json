@@ -1,11 +1,11 @@
 {
-  "name": "angular-split",
+  "name": "@dlpx/angular-split",
   "version": "4.0.0",
   "description": "Angular UI library to split views and allow dragging to resize areas using CSS flexbox layout.",
   "author": "bertrandg",
   "repository": {
     "type": "git",
-    "url": "https://github.com/angular-split/angular-split.git"
+    "url": "https://github.com/miffens-dx/angular-split.git"
   },
   "bugs": {
     "url": "https://github.com/angular-split/angular-split/issues"
@@ -30,5 +30,7 @@
     "@angular/common": ">=8.0.0",
     "@angular/core": ">=8.0.0",
     "rxjs": ">=6.0.0"
-  }
+  },
+  "delphixInternal": true,
+  "publishConfig": "http://artifactory.delphix.com/artifactory/api/npm/dlpx-npm-local/"
 }
